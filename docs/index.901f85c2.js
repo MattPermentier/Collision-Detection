@@ -608,16 +608,9 @@ class Game {
     }
     update(delta) {
         this.brandaan.update(delta);
-        // const ridder = PIXI.Sprite.from('./images/knight.png');
-        // ridder.interactive = true;
-        // ridder.buttonMode = true;
-        // ridder.on('onPointerDown', this.hover);
         // check for collision between sprites
         for (let character of this.characters)if (this.collision(character, this.brandaan)) console.log('collision detected');
     }
-    //   public hover() {
-    //     console.log('klik');
-    //   }
     // create collision function
     collision(sprite1, sprite2) {
         const bounds1 = sprite1.getBounds();
