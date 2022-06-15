@@ -92,8 +92,8 @@ export class Game {
   }
 
   public spriteLoadCompleted() {
-    //create background
-    // let cover = new PIXI.Sprite(this.loader.resources['coverTexture'].texture!);
+    // create background
+    let cover = new PIXI.Sprite(this.loader.resources['coverTexture'].texture!);
     cover.height = this.pixiHeight;
     cover.width = this.pixiWidth;
     this.pixi.stage.addChild(cover);
